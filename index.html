@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WMCA Scrutiny Document Library</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <p class="eyebrow">West Midlands Combined Authority</p>
+      <h1>Scrutiny document library</h1>
+      <p>Minutes, agendas, reports packs and work programme papers collected from the WMCA governance website.</p>
+    </div>
+    <a class="button" href="data/work_programme.xlsx">Download collective work programme spreadsheet</a>
+  </header>
+
+  <main>
+    <section class="cards" id="summaryCards"></section>
+
+    <section class="toolbar">
+      <input id="search" type="search" placeholder="Search committee, meeting, item or document…" />
+      <select id="committeeFilter"><option value="">All committees</option></select>
+      <select id="typeFilter"><option value="">All document types</option></select>
+    </section>
+
+    <section>
+      <h2>Work programme items</h2>
+      <p class="note">Items marked “No assigned date” were found in a work programme document but no meeting date could be identified by the extractor.</p>
+      <div class="tableWrap"><table id="itemsTable"></table></div>
+    </section>
+
+    <section>
+      <h2>Downloaded meeting documents</h2>
+      <div class="tableWrap"><table id="docsTable"></table></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
