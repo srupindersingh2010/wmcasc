@@ -1,0 +1,5 @@
+__pycache__/
+.venv/
+*.pyc
+public/documents/
+!public/documents/.gitkeep

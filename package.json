@@ -1,0 +1,10 @@
+{
+  "name": "wmca-scrutiny-documents",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "scrape": "python scripts/scrape_wmca.py",
+    "serve": "python -m http.server 8000 --directory public"
+  },
+  "devDependencies": {}
+}
